@@ -153,13 +153,13 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "g2",
     title: "Rich Paneer Butter Masala",
     category: "Curry",
-    image: "/src/assets/images/paneer_curry_1782539452393.jpg"
+    image: "/images/paneer_curry_1782539452393.jpg"
   },
   {
     id: "g3",
     title: "Fresh, Hot Tiffin Box",
     category: "Packed Tiffins",
-    image: "/src/assets/images/packed_tiffins_1782539467486.jpg"
+    image: "/images/packed_tiffins_1782539467486.jpg"
   },
   {
     id: "g4",
