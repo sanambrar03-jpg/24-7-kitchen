@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { TIFFIN_PLANS } from "../data";
+import { TIFFIN_PLANS } from "./data";
 import { Check, Flame, Sparkles, ArrowRight, ShieldCheck, MapPin, Leaf, Truck, Heart, Users } from "lucide-react";
 import { motion } from "motion/react";
 
