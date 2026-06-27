@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { GALLERY_ITEMS, GalleryItem } from "../data";
+import { GALLERY_ITEMS, GalleryItem } from "./data";
 import { motion, AnimatePresence } from "motion/react";
 import { Sparkles, Eye } from "lucide-react";
 
