@@ -184,52 +184,77 @@ export const GALLERY_ITEMS: GalleryItem[] = [
 export const INSTAGRAM_POSTS = [
   {
     id: "g1",
-    title: "Soft, Puffing Rotis",
+    title: "Fresh Rotis",
     category: "Fresh Rotis",
-    image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800&auto=format&fit=crop"
+    image: "https://picsum.photos/seed/food1/800/800",
+    likes: "324",
+    comments: "21",
+    caption: "Fresh homemade rotis made daily with love. 🫓",
   },
   {
     id: "g2",
-    title: "Rich Paneer Butter Masala",
+    title: "Paneer Butter Masala",
     category: "Curry",
-    image: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=800&auto=format&fit=crop"
+    image: "https://picsum.photos/seed/food2/800/800",
+    likes: "412",
+    comments: "36",
+    caption: "Creamy paneer butter masala for today's lunch. 🍛",
   },
   {
     id: "g3",
-    title: "Fresh, Hot Tiffin Box",
-    category: "Packed Tiffins",
-    image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&auto=format&fit=crop"
+    title: "Healthy Veg Thali",
+    category: "Thali",
+    image: "https://picsum.photos/seed/food3/800/800",
+    likes: "287",
+    comments: "18",
+    caption: "Balanced Indian thali with fresh vegetables.",
   },
   {
     id: "g4",
-    title: "Vibrant Mixed Sabzi",
-    category: "Dry Sabzi",
-    image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&auto=format&fit=crop"
+    title: "Mixed Veg Sabzi",
+    category: "Sabzi",
+    image: "https://picsum.photos/seed/food4/800/800",
+    likes: "356",
+    comments: "29",
+    caption: "Healthy mixed vegetable curry prepared fresh.",
   },
   {
     id: "g5",
-    title: "Fragrant Basmati Rice",
+    title: "Jeera Rice",
     category: "Rice",
-    image: "https://images.unsplash.com/photo-1516684732162-798a0062be99?w=800&auto=format&fit=crop"
+    image: "https://picsum.photos/seed/food5/800/800",
+    likes: "278",
+    comments: "15",
+    caption: "Fragrant jeera rice served hot every day.",
   },
   {
     id: "g6",
-    title: "Fresh Cucumber Raita",
-    category: "Raita",
-    image: "https://images.unsplash.com/photo-1547592180-85f173990554?w=800&auto=format&fit=crop"
+    title: "Fresh Raita",
+    category: "Side Dish",
+    image: "https://picsum.photos/seed/food6/800/800",
+    likes: "198",
+    comments: "11",
+    caption: "Refreshing cucumber raita to complete your meal.",
   },
   {
     id: "g7",
-    title: "Healthy Indian Thali",
-    category: "Thali",
-    image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800&auto=format&fit=crop"
+    title: "Packed Tiffin",
+    category: "Tiffin",
+    image: "https://picsum.photos/seed/food7/800/800",
+    likes: "443",
+    comments: "42",
+    caption: "Freshly packed tiffins delivered with care.",
   },
   {
     id: "g8",
-    title: "Homemade Veg Meal",
-    category: "Veg Meal",
-    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&auto=format&fit=crop"
-  }
+    title: "Homestyle Meal",
+    category: "Daily Meal",
+    image: "https://picsum.photos/seed/food8/800/800",
+    likes: "391",
+    comments: "33",
+    caption: "Simple, nutritious homemade Indian food.",
+  },
+];
 ];
   }
 ];
