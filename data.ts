@@ -142,42 +142,42 @@ export const TESTIMONIALS: Testimonial[] = [
   }
 ];
 
-export const GALLERY_ITEMS: GalleryItem[] = [
+export const GALLERY_ITEMS = [
   {
     id: "g1",
     title: "Soft, Puffing Rotis",
     category: "Fresh Rotis",
-    image: "https://picsum.photos/seed/roti/600/600"
+    image: "/gallery1.jpg"
   },
   {
     id: "g2",
     title: "Rich Paneer Butter Masala",
     category: "Curry",
-    image: "https://picsum.photos/seed/paneer/600/600"
+    image: "/gallery2.jpg"
   },
   {
     id: "g3",
     title: "Fresh, Hot Tiffin Box",
     category: "Packed Tiffins",
-    image: "https://picsum.photos/seed/tiffin/600/600"
+    image: "/gallery3.jpg"
   },
   {
     id: "g4",
     title: "Vibrant Mixed Sabzi",
     category: "Dry Sabzi",
-    image: "https://picsum.photos/seed/sabzi/600/600"
+    image: "/gallery4.jpg"
   },
   {
     id: "g5",
     title: "Fragrant Basmati Rice",
     category: "Rice",
-    image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?q=80&w=600&auto=format&fit=crop"
+    image: "/gallery5.jpg"
   },
   {
     id: "g6",
-    title: "Creamy Mixed Vegetable Raita",
+    title: "Creamy Vegetable Raita",
     category: "Raita",
-    image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=600&auto=format&fit=crop"
+    image: "/gallery6.jpg"
   }
 ];
 
