@@ -1,4 +1,4 @@
-import { FEATURES } from "../data";
+import { FEATURES } from "./data";
 import * as Icons from "lucide-react";
 import { motion } from "motion/react";
 
