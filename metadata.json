@@ -1,0 +1,6 @@
+{
+  "name": "24/7 Kitchen",
+  "description": "Premium homemade vegetarian tiffin service in Brampton, Ontario.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
