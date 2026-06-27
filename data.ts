@@ -181,45 +181,61 @@ export const GALLERY_ITEMS = [
   }
 ];
 
-import { INSTAGRAM_POSTS } from "./data";
+export const INSTAGRAM_POSTS: InstagramPost[] = [
   {
-    id: 1,
+    id: "1",
     image: "/instagram1.jpg",
-    link: "#",
+    caption: "",
+    likes: "",
+    comments: "",
   },
   {
-    id: 2,
+    id: "2",
     image: "/instagram2.jpg",
-    link: "#",
+    caption: "",
+    likes: "",
+    comments: "",
   },
   {
-    id: 3,
+    id: "3",
     image: "/instagram3.jpg",
-    link: "#",
+    caption: "",
+    likes: "",
+    comments: "",
   },
   {
-    id: 4,
+    id: "4",
     image: "/instagram4.jpg",
-    link: "#",
+    caption: "",
+    likes: "",
+    comments: "",
   },
   {
-    id: 5,
+    id: "5",
     image: "/instagram5.jpg",
-    link: "#",
+    caption: "",
+    likes: "",
+    comments: "",
   },
   {
-    id: 6,
+    id: "6",
     image: "/instagram6.jpg",
-    link: "#",
+    caption: "",
+    likes: "",
+    comments: "",
   },
   {
-    id: 7,
+    id: "7",
     image: "/instagram7.jpg",
-    link: "#",
+    caption: "",
+    likes: "",
+    comments: "",
   },
   {
-    id: 8,
+    id: "8",
     image: "/instagram8.jpg",
-    link: "#",
+    caption: "",
+    likes: "",
+    comments: "",
   },
 ];
