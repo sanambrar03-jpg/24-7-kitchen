@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { X, Check, Copy, Instagram, Calendar, MapPin, MessageSquare, Sparkles, AlertCircle } from "lucide-react";
-import { TIFFIN_PLANS, TiffinPlan } from "../data";
+import { TIFFIN_PLANS, TiffinPlan } from "./data";
 
 interface OrderModalProps {
   isOpen: boolean;
