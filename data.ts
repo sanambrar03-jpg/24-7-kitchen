@@ -181,7 +181,7 @@ export const GALLERY_ITEMS = [
   }
 ];
 
-export const instagramPosts = [
+import { INSTAGRAM_POSTS } from "./data";
   {
     id: 1,
     image: "/instagram1.jpg",
