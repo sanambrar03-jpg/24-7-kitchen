@@ -147,7 +147,7 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "g1",
     title: "Soft, Puffing Rotis",
     category: "Fresh Rotis",
-    image: "/src/assets/images/fresh_rotis_1782539411736.jpg"
+    image: "/images/fresh_rotis_1782539411736.jpg"
   },
   {
     id: "g2",
