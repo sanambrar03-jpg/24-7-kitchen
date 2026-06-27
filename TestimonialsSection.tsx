@@ -1,4 +1,4 @@
-import { TESTIMONIALS } from "../data";
+import { TESTIMONIALS } from "./data";
 import { Star, ShieldCheck, Quote } from "lucide-react";
 import { motion } from "motion/react";
 
