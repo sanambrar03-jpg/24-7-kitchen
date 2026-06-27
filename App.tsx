@@ -1,16 +1,16 @@
 import { useState } from "react";
-import Navbar from "./components/Navbar";
-import HeroSection from "./components/HeroSection";
-import WhyChooseUs from "./components/WhyChooseUs";
-import MonthlyPlans from "./components/MonthlyPlans";
-import AboutUs from "./components/AboutUs";
-import FoodGallery from "./components/FoodGallery";
-import TestimonialsSection from "./components/TestimonialsSection";
-import ServiceAreaSection from "./components/ServiceAreaSection";
-import InstagramFeedSection from "./components/InstagramFeedSection";
-import ContactSection from "./components/ContactSection";
-import FooterSection from "./components/FooterSection";
-import OrderModal from "./components/OrderModal";
+import Navbar from "./Navbar";
+import HeroSection from "./HeroSection";
+import WhyChooseUs from "./WhyChooseUs";
+import MonthlyPlans from "./MonthlyPlans";
+import AboutUs from "./AboutUs";
+import FoodGallery from "./FoodGallery";
+import TestimonialsSection from "./TestimonialsSection";
+import ServiceAreaSection from "./ServiceAreaSection";
+import InstagramFeedSection from "./InstagramFeedSection";
+import ContactSection from "./ContactSection";
+import FooterSection from "./FooterSection";
+import OrderModal from "./OrderModal";
 import { Search, Heart, Sparkles, MapPin } from "lucide-react";
 
 export default function App() {
