@@ -147,25 +147,25 @@ export const GALLERY_ITEMS: GalleryItem[] = [
     id: "g1",
     title: "Soft, Puffing Rotis",
     category: "Fresh Rotis",
-    image: "/images/fresh_rotis_1782539411736.jpg"
+    image: "https://picsum.photos/seed/roti/600/600"
   },
   {
     id: "g2",
     title: "Rich Paneer Butter Masala",
     category: "Curry",
-    image: "/images/paneer_curry_1782539452393.jpg"
+    image: "https://picsum.photos/seed/paneer/600/600"
   },
   {
     id: "g3",
     title: "Fresh, Hot Tiffin Box",
     category: "Packed Tiffins",
-    image: "/images/packed_tiffins_1782539467486.jpg"
+    image: "https://picsum.photos/seed/tiffin/600/600"
   },
   {
     id: "g4",
     title: "Vibrant Mixed Sabzi",
     category: "Dry Sabzi",
-    image: "/src/assets/images/indian_sabzi_1782539484517.jpg"
+    image: "https://picsum.photos/seed/sabzi/600/600"
   },
   {
     id: "g5",
@@ -254,7 +254,4 @@ export const INSTAGRAM_POSTS = [
     comments: "33",
     caption: "Simple, nutritious homemade Indian food.",
   },
-];
-];
-  }
 ];
