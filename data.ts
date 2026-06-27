@@ -181,33 +181,55 @@ export const GALLERY_ITEMS: GalleryItem[] = [
   }
 ];
 
-export const INSTAGRAM_POSTS: InstagramPost[] = [
+export const INSTAGRAM_POSTS = [
   {
-    id: "i1",
-    image: "/src/assets/images/fresh_rotis_1782539411736.jpg",
-    caption: "Freshly inflated hot rotis coming off the tawa! 💨 Made daily with premium whole wheat flour. No preservatives, just pure love! #247Kitchen #BramptonTiffin #GharKaKhana",
-    likes: "142",
-    comments: "18"
+    id: "g1",
+    title: "Soft, Puffing Rotis",
+    category: "Fresh Rotis",
+    image: "https://images.unsplash.com/photo-1512058564366-18510be2db19?w=800&auto=format&fit=crop"
   },
   {
-    id: "i2",
-    image: "/src/assets/images/paneer_curry_1782539452393.jpg",
-    caption: "Rich, creamy, and slow-cooked paneer butter masala! 🥘 Our curries are made with freshly ground spices and zero artificial food coloring. Taste the authenticity. #BramptonEats #PureVeg",
-    likes: "189",
-    comments: "24"
+    id: "g2",
+    title: "Rich Paneer Butter Masala",
+    category: "Curry",
+    image: "https://images.unsplash.com/photo-1603894584373-5ac82b2ae398?w=800&auto=format&fit=crop"
   },
   {
-    id: "i3",
-    image: "/src/assets/images/packed_tiffins_1782539467486.jpg",
-    caption: "Hygienically packed and ready for delivery across Brampton! 🚚 Ensuring your meals reach you hot, fresh, and securely sealed. Order your weekly slot now! #TiffinDelivery #BramptonStudents",
-    likes: "215",
-    comments: "31"
+    id: "g3",
+    title: "Fresh, Hot Tiffin Box",
+    category: "Packed Tiffins",
+    image: "https://images.unsplash.com/photo-1546069901-ba9599a7e63c?w=800&auto=format&fit=crop"
   },
   {
-    id: "i4",
-    image: "/src/assets/images/indian_sabzi_1782539484517.jpg",
-    caption: "Colors of health! 🌈 Fresh green peas, potatoes, carrots, and cottage cheese sautéed to perfection. What's your favorite daily sabzi? Let us know in comments! 👇 #HealthyEating #BramptonFoodies",
-    likes: "156",
-    comments: "15"
+    id: "g4",
+    title: "Vibrant Mixed Sabzi",
+    category: "Dry Sabzi",
+    image: "https://images.unsplash.com/photo-1512621776951-a57141f2eefd?w=800&auto=format&fit=crop"
+  },
+  {
+    id: "g5",
+    title: "Fragrant Basmati Rice",
+    category: "Rice",
+    image: "https://images.unsplash.com/photo-1516684732162-798a0062be99?w=800&auto=format&fit=crop"
+  },
+  {
+    id: "g6",
+    title: "Fresh Cucumber Raita",
+    category: "Raita",
+    image: "https://images.unsplash.com/photo-1547592180-85f173990554?w=800&auto=format&fit=crop"
+  },
+  {
+    id: "g7",
+    title: "Healthy Indian Thali",
+    category: "Thali",
+    image: "https://images.unsplash.com/photo-1585937421612-70a008356fbe?w=800&auto=format&fit=crop"
+  },
+  {
+    id: "g8",
+    title: "Homemade Veg Meal",
+    category: "Veg Meal",
+    image: "https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800&auto=format&fit=crop"
+  }
+];
   }
 ];
