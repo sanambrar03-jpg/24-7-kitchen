@@ -73,6 +73,7 @@ export default function TruckerPlans({ onOrderClick }: TruckerPlansProps) {
                 ))}
               </ul>
               <button
+  onClick={() => onOrderClick(combo.title)}
   className="mt-6 w-full bg-red-600 text-white py-3 rounded-lg font-bold hover:bg-red-700 transition"
 >
   Order Now
