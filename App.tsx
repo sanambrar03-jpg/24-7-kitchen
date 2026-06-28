@@ -3,6 +3,7 @@ import Navbar from "./Navbar";
 import HeroSection from "./HeroSection";
 import WhyChooseUs from "./WhyChooseUs";
 import MonthlyPlans from "./MonthlyPlans";
+import TruckerPlans from "./TruckerPlans";
 import AboutUs from "./AboutUs";
 import FoodGallery from "./FoodGallery";
 import TestimonialsSection from "./TestimonialsSection";
@@ -56,7 +57,7 @@ export default function App() {
 
         {/* 3. Monthly Tiffin Plans */}
         <MonthlyPlans onOrderClick={handleOpenOrderModal} />
-
+<TruckerPlans />
         {/* 4. About Us (Our Story) */}
         <AboutUs />
 
