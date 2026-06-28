@@ -173,7 +173,9 @@ Can you please confirm delivery availability for my address? Thank you!`;
                         <span className="text-lg font-extrabold text-brand-green">
                           ${plan.priceFiveDays}
                         </span>
-                        <span className="text-[10px] text-gray-400">/month (5-days)</span>
+                        <span className="text-[10px] text-gray-400">
+  per meal
+</span>
                       </div>
                     </button>
                   ))}
