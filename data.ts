@@ -239,3 +239,43 @@ export const INSTAGRAM_POSTS: InstagramPost[] = [
     comments: "",
   },
 ];
+export const TRUCKER_PLANS = [
+  {
+    id: "t1",
+    name: "COMBO 1",
+    price: "$20",
+    includes: [
+      "8 oz Dal",
+      "8 oz Sabji",
+      "Raita or Salad",
+      "Rice or Quinoa",
+      "10 Rotis"
+    ]
+  },
+  {
+    id: "t2",
+    name: "COMBO 2",
+    price: "$40",
+    includes: [
+      "12 oz Dal",
+      "12 oz Sabji",
+      "12 oz Egg / Paneer / Tofu Bhurji",
+      "Raita or Salad",
+      "Rice or Quinoa",
+      "20 Rotis"
+    ]
+  },
+  {
+    id: "t3",
+    name: "COMBO 3",
+    price: "$50",
+    includes: [
+      "16 oz Dal",
+      "16 oz Sabji",
+      "16 oz Egg / Paneer / Tofu Bhurji",
+      "Raita or Salad",
+      "Rice or Quinoa",
+      "20 Rotis"
+    ]
+  }
+];
