@@ -24,9 +24,18 @@ export default function OrderModal({ isOpen, onClose, initialPlanId }: OrderModa
 
   if (!isOpen) return null;
 
-  const currentPlan = TIFFIN_PLANS.find((p) => p.id === selectedPlanId) || TIFFIN_PLANS[1];
-  const basePrice = scheduleType === "5-days" ? currentPlan.priceFiveDays : currentPlan.priceSixDays;
-  const totalCost = basePrice;
+  const currentPlan = TIFFIN_PLANS.find((p) => p.id === selectedPlanId);
+
+const isTruckersCombo =
+  currentPlan?.name?.includes("Truckers") ||
+  currentPlan?.name?.includes("Trucker");
+
+const basePrice =
+  scheduleType === "5-days"
+    ? currentPlan.priceFiveDays
+    : currentPlan.priceSixDays;
+
+const totalCost = basePrice;
 
   // Generate copy text for Instagram DM
   const generateOrderMessage = () => {
