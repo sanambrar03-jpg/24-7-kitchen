@@ -57,7 +57,7 @@ export default function App() {
 
         {/* 3. Monthly Tiffin Plans */}
         <MonthlyPlans onOrderClick={handleOpenOrderModal} />
-<TruckerPlans />
+<TruckerPlans onOrderClick={handleOpenOrderModal} />
         {/* 4. About Us (Our Story) */}
         <AboutUs />
 
