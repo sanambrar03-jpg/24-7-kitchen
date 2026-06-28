@@ -72,8 +72,52 @@ export const TIFFIN_PLANS: TiffinPlan[] = [
       "Fragrant Basmati Rice",
       "Traditional Sweet Dish (Gulab Jamun/Kheer)",
       "8 Soft Handmade Rotis"
-    ]
-  }
+  ]
+},
+{
+  id: "COMBO 1",
+  name: "Truckers Combo 1",
+  description: "Truckers Special",
+  priceFiveDays: 20,
+  priceSixDays: 20,
+  includes: [
+    "8 oz Dal",
+    "8 oz Sabji",
+    "Raita OR Salad",
+    "Rice OR Quinoa",
+    "10 Rotis"
+  ]
+},
+{
+  id: "COMBO 2",
+  name: "Truckers Combo 2",
+  description: "Truckers Special",
+  priceFiveDays: 40,
+  priceSixDays: 40,
+  includes: [
+    "12 oz Dal",
+    "12 oz Sabji",
+    "12 oz Egg / Paneer / Tofu Bhurji",
+    "Raita OR Salad",
+    "Rice OR Quinoa",
+    "20 Rotis"
+  ]
+},
+{
+  id: "COMBO 3",
+  name: "Truckers Combo 3",
+  description: "Truckers Special",
+  priceFiveDays: 60,
+  priceSixDays: 60,
+  includes: [
+    "16 oz Dal",
+    "16 oz Sabji",
+    "16 oz Egg / Paneer / Tofu Bhurji",
+    "Raita OR Salad",
+    "Rice OR Quinoa",
+    "30 Rotis"
+  ]
+}
 ];
 
 export const FEATURES: Feature[] = [
