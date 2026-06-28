@@ -26,6 +26,7 @@ export default function Navbar({ onOrderClick }: NavbarProps) {
     { name: "Home", href: "#home" },
     { name: "Why Us", href: "#why-us" },
     { name: "Plans", href: "#plans" },
+    { name: "Truckers", href: "#truckers" },
     { name: "Our Story", href: "#story" },
     { name: "Gallery", href: "#gallery" },
     { name: "Contact", href: "#contact" },
