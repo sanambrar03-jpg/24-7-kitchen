@@ -181,6 +181,7 @@ Can you please confirm delivery availability for my address? Thank you!`;
               </div>
 
               {/* Schedule Select */}
+              {!isTruckersCombo && (
               <div>
                 <label className="block text-sm font-bold text-gray-800 mb-3">
                   Choose Weekly Schedule:
@@ -216,7 +217,7 @@ Can you please confirm delivery availability for my address? Thank you!`;
                   </button>
                 </div>
               </div>
-
+)}
               {/* Delivery Timing Slot */}
               <div>
                 <label className="block text-sm font-bold text-gray-800 mb-3">
