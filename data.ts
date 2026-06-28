@@ -115,7 +115,7 @@ priceSixDays: 50,
     "16 oz Egg / Paneer / Tofu Bhurji",
     "Raita OR Salad",
     "Rice OR Quinoa",
-    "30 Rotis"
+    "20 Rotis"
   ]
 }
 ];
