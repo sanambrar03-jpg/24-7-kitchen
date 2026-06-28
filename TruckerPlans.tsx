@@ -1,5 +1,9 @@
 
-export default function TruckerPlans() {
+type TruckerPlansProps = {
+  onOrderClick: (planId: string) => void;
+};
+
+export default function TruckerPlans({ onOrderClick }: TruckerPlansProps) {
   const combos = [
     {
       title: "COMBO 1",
