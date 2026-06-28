@@ -107,8 +107,8 @@ export const TIFFIN_PLANS: TiffinPlan[] = [
   id: "COMBO 3",
   name: "Truckers Combo 3",
   description: "Truckers Special",
-  priceFiveDays: 60,
-  priceSixDays: 60,
+  priceFiveDays: 50,
+priceSixDays: 50,
   includes: [
     "16 oz Dal",
     "16 oz Sabji",
