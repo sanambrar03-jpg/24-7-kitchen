@@ -27,8 +27,9 @@ export default function OrderModal({ isOpen, onClose, initialPlanId }: OrderModa
   const currentPlan = TIFFIN_PLANS.find((p) => p.id === selectedPlanId);
 
 const isTruckersCombo =
-  currentPlan?.name?.includes("Truckers") ||
-  currentPlan?.name?.includes("Trucker");
+  currentPlan?.id === "COMBO 1" ||
+  currentPlan?.id === "COMBO 2" ||
+  currentPlan?.id === "COMBO 3";
 
 const basePrice =
   scheduleType === "5-days"
