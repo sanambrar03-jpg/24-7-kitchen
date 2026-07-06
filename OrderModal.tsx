@@ -174,7 +174,7 @@ Can you please confirm delivery availability for my address? Thank you!`;
                           ${plan.priceFiveDays}
                         </span>
                         <span className="text-[10px] text-gray-400">
-  per meal
+  /month
 </span>
                       </div>
                     </button>
