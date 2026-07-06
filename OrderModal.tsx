@@ -174,7 +174,9 @@ Can you please confirm delivery availability for my address? Thank you!`;
                           ${plan.priceFiveDays}
                         </span>
                         <span className="text-[10px] text-gray-400">
-  /month
+  {plan.id === "mini-combo" || plan.id === "full-combo"
+    ? "/month"
+    : "/meal"}
 </span>
                       </div>
                     </button>
@@ -200,7 +202,8 @@ Can you please confirm delivery availability for my address? Thank you!`;
                   >
                     Monday - Friday
                     <span className="block text-[10px] font-normal opacity-90">
-                      $${currentPlan.priceFiveDays}/month
+                      $${currentPlan.priceFiveDays}
+{!isTruckersCombo && "/month"}
                     </span>
                   </button>
                   <button
@@ -214,7 +217,8 @@ Can you please confirm delivery availability for my address? Thank you!`;
                   >
                     Monday - Saturday
                     <span className="block text-[10px] font-normal opacity-90">
-                      $${currentPlan.priceSixDays}/month
+                      $${currentPlan.priceSixDays}
+{!isTruckersCombo && "/month"}
                     </span>
                   </button>
                 </div>
@@ -383,7 +387,9 @@ Can you please confirm delivery availability for my address? Thank you!`;
                     <span className="font-display text-2xl font-black text-brand-green">
                       ${totalCost}
                     </span>
-                    <span className="text-[10px] text-gray-400 block">CAD / Month (Tax-free)</span>
+                    <span className="text-[10px] text-gray-400 block">
+  CAD / {currentPlan?.id === "mini-combo" || currentPlan?.id === "full-combo" ? "Month" : "Meal"} (Tax-free)
+</span>
                   </div>
                 </div>
               </div>
@@ -446,9 +452,12 @@ Can you please confirm delivery availability for my address? Thank you!`;
           </div>
 
           <div className="flex items-center space-x-2">
-            <span className="text-xs font-semibold text-gray-500 mr-2">
-              Total: <span className="text-brand-green font-bold text-sm">${totalCost}/mo</span>
-            </span>
+  <span className="text-xs font-semibold text-gray-500 mr-2">
+    Total:
+    <span className="text-brand-green font-bold text-sm">
+      ${totalCost}/{isTruckersCombo ? "meal" : "month"}
+    </span>
+  </span>
             {step < 3 ? (
               <button
                 type="button"
