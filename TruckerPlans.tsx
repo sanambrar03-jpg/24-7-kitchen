@@ -64,8 +64,9 @@ export default function TruckerPlans({ onOrderClick }: TruckerPlansProps) {
               <h3 className="text-2xl font-bold">{combo.title}</h3>
 
               <p className="text-3xl text-orange-600 font-bold my-3">
-                {combo.price}
-              </p>
+  {combo.price}
+  <span className="text-lg text-gray-500 font-medium"> /meal</span>
+</p>
 
               <ul className="space-y-2">
                 {combo.items.map((item) => (
