@@ -59,7 +59,15 @@ export default function MonthlyPlans({ onOrderClick }: MonthlyPlansProps) {
 
         {/* Plans Grid */}
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto items-stretch">
-          {TIFFIN_PLANS.map((plan, index) => {
+          {TIFFIN_PLANS
+  .filter(
+    (plan) =>
+      !plan.name.toLowerCase().includes("trucker") &&
+      !plan.name.toLowerCase().includes("combo 1") &&
+      !plan.name.toLowerCase().includes("combo 2") &&
+      !plan.name.toLowerCase().includes("combo 3")
+  )
+  .map((plan, index) => {
             const isPopular = plan.badge === "Most Popular";
             const isMini = plan.name === "MINI COMBO";
             const price = billingCycle === "5-days" ? plan.priceFiveDays : plan.priceSixDays;
