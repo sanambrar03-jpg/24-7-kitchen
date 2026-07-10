@@ -21,7 +21,7 @@ export default function OrderModal({ isOpen, onClose, initialPlanId }: OrderModa
   const [startDate, setStartDate] = useState("");
   
   const [copied, setCopied] = useState(false);
-
+const [isSubmitting, setIsSubmitting] = useState(false);
   if (!isOpen) return null;
 
   const currentPlan = TIFFIN_PLANS.find((p) => p.id === selectedPlanId);
@@ -64,6 +64,8 @@ Can you please confirm delivery availability for my address? Thank you!`;
   };
 
   const handlePlaceOrder = async () => {
+    if (isSubmitting) return;
+setIsSubmitting(true);
 
 const orderData = {
     name,
@@ -84,12 +86,15 @@ try {
 const result = await response.json();
 
     if (result.success) {
-      alert("✅ Order placed successfully!");
-      onClose();
-    } else {
-      alert("Something went wrong.");
-    }
+  setIsSubmitting(false);
+  alert("✅ Order placed successfully!");
+  onClose();
+} else {
+  setIsSubmitting(false);
+  alert("Something went wrong.");
+}
   } catch (err) {
+  setIsSubmitting(false);
   console.error(err);
   alert(err.message);
 }
