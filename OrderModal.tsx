@@ -84,8 +84,11 @@ Can you please confirm delivery availability for my address? Thank you!`;
       },
       body: JSON.stringify(orderData),
     });
+alert(response.status);
 
-    const result = await response.json();
+const result = await response.json();
+
+alert(JSON.stringify(result));
 
     if (result.success) {
       alert("✅ Order placed successfully!");
@@ -94,8 +97,9 @@ Can you please confirm delivery availability for my address? Thank you!`;
       alert("Something went wrong.");
     }
   } catch (err) {
-    alert("Failed to place order.");
-  }
+  console.error(err);
+  alert(err.message);
+}
 };
 
   const nextStep = () => {
