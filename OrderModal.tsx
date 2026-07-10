@@ -22,6 +22,7 @@ export default function OrderModal({ isOpen, onClose, initialPlanId }: OrderModa
   
   const [copied, setCopied] = useState(false);
 const [isSubmitting, setIsSubmitting] = useState(false);
+  const [showSuccess, setShowSuccess] = useState(false);
   if (!isOpen) return null;
 
   const currentPlan = TIFFIN_PLANS.find((p) => p.id === selectedPlanId);
@@ -87,8 +88,13 @@ const result = await response.json();
 
     if (result.success) {
   setIsSubmitting(false);
-  alert("✅ Order placed successfully!");
-  onClose();
+  setShowSuccess(true);
+
+  setTimeout(() => {
+    setShowSuccess(false);
+    onClose();
+  }, 3000);
+}
 } else {
   setIsSubmitting(false);
   alert("Something went wrong.");
@@ -499,16 +505,37 @@ const result = await response.json();
                 <span>Continue</span>
               </button>
             ) : (
-              <button
-                type="button"
-                onClick={onClose}
-                className="bg-brand-dark/10 hover:bg-brand-dark/20 text-brand-dark px-4 py-2.5 rounded-xl font-bold text-xs transition-all"
-              >
-                Close Window
-              </button>
+               <button
+  type="button"
+  onClick={() => {
+    setStep(1);
+    onClose();
+  }}
+  className="bg-brand-green hover:bg-emerald-700 text-white px-6 py-3 rounded-xl font-bold text-sm transition-all shadow-lg"
+>
+  🎉 Awesome!
+</button>
             )}
           </div>
         </div>
+        {showSuccess && (
+  <div className="fixed inset-0 bg-black/40 flex items-center justify-center z-50">
+    <div className="bg-white rounded-3xl p-8 text-center shadow-2xl animate-bounce max-w-sm w-[90%]">
+      <div className="w-20 h-20 mx-auto rounded-full bg-green-100 flex items-center justify-center text-5xl">
+        ✅
+      </div>
+
+      <h2 className="text-2xl font-bold text-green-700 mt-5">
+        Order Confirmed!
+      </h2>
+
+      <p className="text-gray-600 mt-2">
+        Thank you for choosing <b>24/7 Kitchen</b>.<br />
+        Your order has been placed successfully.
+      </p>
+    </div>
+  </div>
+)}
 
       </div>
     </div>
