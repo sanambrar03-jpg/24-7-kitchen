@@ -64,7 +64,6 @@ Can you please confirm delivery availability for my address? Thank you!`;
   };
 
   const handlePlaceOrder = async () => {
-    alert("1");
   alert(currentPlan ? "Current plan OK" : "Current plan is NULL");
     alert("Price 5: " + currentPlan?.priceFiveDays);
 alert("Price 6: " + currentPlan?.priceSixDays);
@@ -81,7 +80,6 @@ const orderData = {
   };
 
 try {
-  alert("3");
     const response = await fetch("https://script.google.com/macros/s/AKfycbwLipnu-GailTS7SIvqEQ-yJvQDm_f-7f4owcbn2dEguFAJCXv9OdKnO6D-4MJlPr3B/exec", {
   method: "POST",
   body: JSON.stringify(orderData),
@@ -90,7 +88,6 @@ alert(response.status);
 const result = await response.json();
 
 alert(JSON.stringify(result));
-alert("5");
     if (result.success) {
       alert("✅ Order placed successfully!");
       onClose();
