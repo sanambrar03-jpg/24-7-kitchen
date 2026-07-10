@@ -504,16 +504,6 @@ const result = await response.json();
                 <span>Continue</span>
               </button>
             ) : (
-               <button
-  type="button"
-  onClick={() => {
-    setStep(1);
-    onClose();
-  }}
-  className="bg-brand-green hover:bg-emerald-700 text-white px-6 py-3 rounded-xl font-bold text-sm transition-all shadow-lg"
->
-  🎉 Awesome!
-</button>
             )}
           </div>
         </div>
