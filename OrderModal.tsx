@@ -89,7 +89,8 @@ alert("2");
 
 try {
   alert("3");
-    const response = await fetch("https://script.google.com/macros/s/AKfycbwLipnu-GailTS7SIvqEQ-yJvQDm_f-7f4owcbn2dEguFAJCXv9OdKnO6D-4MJlPr3B/exec
+    const response = await fetch("https://script.google.com/macros/s/AKfycbwLipnu-GailTS7SIvqEQ-yJvQDm_f-7f4owcbn2dEguFAJCXv9OdKnO6D-4MJlPr3B/exec",
+  {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
