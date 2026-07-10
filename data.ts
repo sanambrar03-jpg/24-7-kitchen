@@ -49,9 +49,7 @@ export const TIFFIN_PLANS: TiffinPlan[] = [
     priceFiveDays: 140,
     priceSixDays: 150,
     includes: [
-      "8 oz Dal",
-  "8 oz Sabji",
-      "1 Curry (Chef's Daily Special)",
+      "8 oz 1 Curry (Chef's Daily Special)",
       "Creamy Raita",
       "Fresh Crisp Salad",
       "Fragrant Basmati Rice",
@@ -67,10 +65,8 @@ export const TIFFIN_PLANS: TiffinPlan[] = [
     priceFiveDays: 220,
     priceSixDays: 230,
     includes: [
-      "8 oz Dal",
-  "8 oz Sabji",
-      "1 Curry (Chef's Choice)",
-      "1 Delicious dry Sabzi (Chef's Choice)",
+      "8 oz 1 Curry (Chef's Choice)",
+      "8 oz 1 Delicious dry Sabzi (Chef's Choice)",
       "Creamy Raita",
       "Fresh Crisp Salad",
       "Fragrant Basmati Rice",
