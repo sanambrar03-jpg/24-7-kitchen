@@ -495,16 +495,15 @@ const result = await response.json();
       ${totalCost}/{isTruckersCombo ? "meal" : "month"}
     </span>
   </span>
-            {step < 3 ? (
-              <button
-                type="button"
-                onClick={nextStep}
-                className="bg-brand-orange hover:bg-amber-600 text-white px-5 py-2.5 rounded-xl font-bold text-xs shadow-md transition-all flex items-center space-x-1"
-              >
-                <span>Continue</span>
-              </button>
-            ) : (
-            )}
+            {step < 3 && (
+  <button
+    type="button"
+    onClick={nextStep}
+    className="bg-brand-orange hover:bg-amber-600 text-white px-5 py-2.5 rounded-xl font-bold text-xs shadow-md transition-all flex items-center"
+  >
+    <span>Continue</span>
+  </button>
+)}
           </div>
         </div>
         {showSuccess && (
