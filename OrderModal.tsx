@@ -71,11 +71,11 @@ Can you please confirm delivery availability for my address? Thank you!`;
     address,
     plan: currentPlan.name,
     startDate,
-    total: selectedSchedule === "5-days"
+    total: Scheduletype === "5-days"
       ? currentPlan.priceFiveDays
       : currentPlan.priceSixDays,
   };
-alert (“2”);
+alert("2");
   try {
     alert("3");
     const response = await fetch("https://script.google.com/macros/s/AKfycbwLipnu-GailTS7SIvqEQ-yJvQDm_f-7f4owcbn2dEguFAJCXv9OdKnO6D-4MJlPr3B/exec", {
