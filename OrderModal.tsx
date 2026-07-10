@@ -436,13 +436,14 @@ const result = await response.json();
 
                 <div className="flex flex-col sm:flex-row gap-3">
                   <button
-                    type="button"
-                    onClick={handlePlaceOrder}
-                    className="flex-1 bg-brand-green hover:bg-emerald-800 text-white py-4 px-6 rounded-2xl font-bold text-sm flex items-center justify-center space-x-2 shadow-lg transition-all hover:-translate-y-0.5"
-                  >
-                    <Instagram className="h-5 w-5" />
-                    <span>Place Order</span>
-                  </button>
+  type="button"
+  onClick={handlePlaceOrder}
+  disabled={isSubmitting}
+  className="flex-1 bg-brand-green hover:bg-emerald-800 text-white py-4 px-6 rounded-2xl font-bold text-sm flex items-center justify-center gap-2 disabled:opacity-50 disabled:cursor-not-allowed"
+>
+  <Instagram className="h-5 w-5" />
+  <span>{isSubmitting ? "Placing Order..." : "Place Order"}</span>
+</button>
 
                   <button
                     type="button"
