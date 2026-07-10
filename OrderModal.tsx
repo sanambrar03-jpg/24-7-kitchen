@@ -81,10 +81,8 @@ try {
   method: "POST",
   body: JSON.stringify(orderData),
 });
-alert(response.status);
 const result = await response.json();
 
-alert(JSON.stringify(result));
     if (result.success) {
       alert("✅ Order placed successfully!");
       onClose();
