@@ -66,6 +66,8 @@ Can you please confirm delivery availability for my address? Thank you!`;
   const handlePlaceOrder = async () => {
     alert("1");
   alert(currentPlan ? "Current plan OK" : "Current plan is NULL");
+    alert("Price 5: " + currentPlan?.priceFiveDays);
+alert("Price 6: " + currentPlan?.priceSixDays);
 
 const orderData = {
     name,
@@ -73,9 +75,9 @@ const orderData = {
     address,
     plan: currentPlan?.name,
     startDate,
-    total: Scheduletype === "5-days"
-      ? currentPlan.priceFiveDays
-      : currentPlan.priceSixDays,
+    total: scheduleType === "5-days"
+  ? currentPlan.priceFiveDays
+  : currentPlan.priceSixDays,
   };
     alert("Name: " + name);
 alert("Phone: " + phone);
@@ -84,8 +86,9 @@ alert("Plan: " + currentPlan.name);
 alert("Schedule: " + scheduleType);
 alert("Start Date: " + startDate);
 alert("2");
-  try {
-    alert("3");
+
+try {
+  alert("3");
     const response = await fetch("https://script.google.com/macros/s/AKfycbwLipnu-GailTS7SIvqEQ-yJvQDm_f-7f4owcbn2dEguFAJCXv9OdKnO6D-4MJlPr3B/exec", {
       method: "POST",
       headers: {
