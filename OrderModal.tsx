@@ -94,7 +94,6 @@ const result = await response.json();
     setShowSuccess(false);
     onClose();
   }, 3000);
-}
 } else {
   setIsSubmitting(false);
   alert("Something went wrong.");
