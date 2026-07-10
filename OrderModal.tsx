@@ -79,13 +79,6 @@ const orderData = {
   ? currentPlan.priceFiveDays
   : currentPlan.priceSixDays,
   };
-    alert("Name: " + name);
-alert("Phone: " + phone);
-alert("Address: " + address);
-alert("Plan: " + currentPlan.name);
-alert("Schedule: " + scheduleType);
-alert("Start Date: " + startDate);
-alert("2");
 
 try {
   alert("3");
@@ -94,7 +87,6 @@ try {
   body: JSON.stringify(orderData),
 });
 alert(response.status);
-alert("4");
 const result = await response.json();
 
 alert(JSON.stringify(result));
