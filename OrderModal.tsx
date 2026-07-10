@@ -63,11 +63,39 @@ Can you please confirm delivery availability for my address? Thank you!`;
     setTimeout(() => setCopied(false), 2000);
   };
 
-  const handleInstagramDM = () => {
-    handleCopy();
-    // Redirect to Instagram profile
-    window.open("https://www.instagram.com/24_7.kitchen/", "_blank", "noopener,noreferrer");
+  const handlePlaceOrder = async () => {
+  const orderData = {
+    name,
+    phone,
+    address,
+    plan: selectedPlan.name,
+    startDate,
+    total: selectedSchedule === "5-days"
+      ? selectedPlan.priceFiveDays
+      : selectedPlan.priceSixDays,
   };
+
+  try {
+    const response = await fetch("https://script.google.com/macros/s/AKfycbwLipnu-GailTS7SIvqEQ-yJvQDm_f-7f4owcbn2dEguFAJCXv9OdKnO6D-4MJlPr3B/exec", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(orderData),
+    });
+
+    const result = await response.json();
+
+    if (result.success) {
+      alert("✅ Order placed successfully!");
+      onClose();
+    } else {
+      alert("Something went wrong.");
+    }
+  } catch (err) {
+    alert("Failed to place order.");
+  }
+};
 
   const nextStep = () => {
     if (step === 2) {
@@ -406,11 +434,11 @@ Can you please confirm delivery availability for my address? Thank you!`;
                 <div className="flex flex-col sm:flex-row gap-3">
                   <button
                     type="button"
-                    onClick={handleInstagramDM}
+                    onClick={handlePlaceOrder}
                     className="flex-1 bg-brand-green hover:bg-emerald-800 text-white py-4 px-6 rounded-2xl font-bold text-sm flex items-center justify-center space-x-2 shadow-lg transition-all hover:-translate-y-0.5"
                   >
                     <Instagram className="h-5 w-5" />
-                    <span>DM on Instagram & Order</span>
+                    <span>Place Order</span>
                   </button>
 
                   <button
