@@ -64,9 +64,6 @@ Can you please confirm delivery availability for my address? Thank you!`;
   };
 
   const handlePlaceOrder = async () => {
-  alert(currentPlan ? "Current plan OK" : "Current plan is NULL");
-    alert("Price 5: " + currentPlan?.priceFiveDays);
-alert("Price 6: " + currentPlan?.priceSixDays);
 
 const orderData = {
     name,
