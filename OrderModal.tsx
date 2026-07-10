@@ -64,15 +64,16 @@ Can you please confirm delivery availability for my address? Thank you!`;
   };
 
   const handlePlaceOrder = async () => {
+    alert("Button clicked");
   const orderData = {
     name,
     phone,
     address,
-    plan: selectedPlan.name,
+    plan: currentPlan.name,
     startDate,
     total: selectedSchedule === "5-days"
-      ? selectedPlan.priceFiveDays
-      : selectedPlan.priceSixDays,
+      ? currentPlan.priceFiveDays
+      : currentPlan.priceSixDays,
   };
 
   try {
