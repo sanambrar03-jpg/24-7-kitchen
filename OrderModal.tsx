@@ -454,17 +454,17 @@ const result = await response.json();
                     className="bg-white border border-gray-200 hover:border-gray-300 text-gray-700 py-4 px-5 rounded-2xl font-bold text-sm flex items-center justify-center space-x-2 transition-all"
                   >
                     {copied ? (
-                      <>
-                        <Check className="h-5 w-5 text-emerald-500" />
-                        <span className="text-emerald-600">Copied to Clipboard!</span>
-                      </>
-                    ) : (
-                      <>
-                        <Copy className="h-5 w-5 text-gray-400" />
-                        <span>Copy Order Text</span>
-                      </>
-                    )}
-                  </button>
+  <>
+    <Check className="h-5 w-5 text-emerald-500" />
+    <span className="text-emerald-600">Copied to Clipboard!</span>
+  </>
+) : (
+  <>
+    <Copy className="h-5 w-5 text-gray-400" />
+    <span>Copy Order Text</span>
+  </>
+)}
+</button>
                 </div>
               </div>
             </div>
@@ -502,7 +502,6 @@ const result = await response.json();
     <span>Continue</span>
   </button>
 )}
-            )}
           </div>
         </div>
         {showSuccess && (
