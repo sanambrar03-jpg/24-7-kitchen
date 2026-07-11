@@ -431,13 +431,11 @@ const result = await response.json();
               </div>
 
               {/* Action instructions */}
-              <div className="space-y-4">
-                <div className="flex items-start space-x-2.5 text-xs text-gray-500 bg-amber-50 p-3.5 rounded-xl border border-amber-100">
-                  <AlertCircle className="h-5 w-5 text-brand-orange shrink-0 mt-0.5" />
-                  <p>
-                    <strong>How to complete your order:</strong> Click the primary green button below. This will **automatically copy** your order details to your clipboard and open our official Instagram profile <span className="font-bold text-brand-orange">@24_7.kitchen</span>. Simply send us a Direct Message (DM) and paste the details! We'll confirm your delivery slot instantly.
-                  </p>
-                </div>
+              <div className="bg-green-50 border border-green-200 rounded-xl p-3 mb-4">
+  <p className="text-sm text-green-800 text-center font-medium">
+    ✅ Tap <strong>Place Order</strong> to confirm your order. We'll receive it instantly and contact you shortly to confirm your delivery.
+  </p>
+</div>
 
                 <div className="flex flex-col sm:flex-row gap-3">
                   <button
