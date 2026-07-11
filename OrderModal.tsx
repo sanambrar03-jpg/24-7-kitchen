@@ -502,6 +502,7 @@ const result = await response.json();
     <span>Continue</span>
   </button>
 )}
+            )}
           </div>
         </div>
         {showSuccess && (
