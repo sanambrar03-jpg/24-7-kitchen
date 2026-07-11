@@ -467,7 +467,6 @@ const result = await response.json();
 </button>
                 </div>
               </div>
-            </div>
           )}
 
         </div>
